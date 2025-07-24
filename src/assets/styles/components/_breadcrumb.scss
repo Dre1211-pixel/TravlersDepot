@@ -1,0 +1,35 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 40px 0;
+    font-size: 24px;
+    color: $neutral-600; // 預設灰色
+
+    @media (max-width: 992px) {
+        font-size: 20px;
+    }
+
+    .breadLink {
+        display: flex;
+        align-items: center;
+        color: $neutral-600;
+        font-weight: 500;
+        text-decoration: none;
+
+        &:hover {
+            color: $primary-600; // hover 時變成主色
+        }
+
+        // 最後一個項目（目前頁面）
+        &.active {
+            color: $primary-600;
+
+        }
+    }
+
+    .breadcrumb-seperator {
+        margin: 0 20px;
+        color: $neutral-600;
+    }
+}

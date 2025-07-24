@@ -1,0 +1,123 @@
+@import "../abstracts/variables";
+
+section.aboutPage {
+
+    .about-banner {
+        object-position: 50% 30%;
+    }
+
+    ul.timeLine {
+        margin: 0 auto;  /* 這會讓 ul 本身在父元素中水平置中 */
+        max-width: fit-content;  /* 讓容器寬度符合內容 */
+
+        li {
+            display: flex;
+            margin-bottom: 20px;
+    
+                &:last-child {
+                    margin-bottom: 0; // 最後一個 li 不需要 margin-bottom
+                }
+
+            .timeLineYear-col {
+                width: 100px;
+                text-align: center;
+                
+                .timeLineYear {
+                    color: $primary-600;
+                }
+            }
+
+            .dash-line-col {
+                width: 48px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                
+                .dash-line {
+                    display: block;
+                    width: 16px;
+                    height: 2px;
+                    background-color: $primary-600;
+                    margin-top: 15px;
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+
+            .content-col {
+                flex: 1;
+                padding-left: 24px;
+                
+                .title {
+                    color: $primary-600;
+                }
+                
+                .content {
+                    color: $neutral-700;
+                    
+                }
+            }
+        }
+    }
+
+    // 關於旅人集所區塊
+    .about-content {
+        text-align: left;
+
+        .about-img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            display: block;
+            margin: 24px auto 0 auto;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .about-content {
+            padding: 0 16px;
+        }
+    }
+
+    // 針對 CSR 區塊 RWD 排版
+
+    .csr-section {
+        // 預設橫向排列
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch; // 改為 stretch 讓高度一致
+
+        .image-section, .text-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .text-section {
+            padding: 0 24px;
+        }
+
+        .csr-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            display: block; 
+            filter: grayscale(100%); // 添加 100% 灰階效果
+        }
+    }
+} 
+
+// 標題樣式
+.subtitle {
+            color: $primary-400;
+}
+
+// 控制間距
+.pb-10 {
+    padding-bottom: 40px;
+}
+
+.pt-10 {
+    padding-top: 40px;
+}

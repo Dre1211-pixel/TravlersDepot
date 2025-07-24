@@ -1,0 +1,201 @@
+//---pageStyle ---- Cart.jsx 購物車
+
+.text-blue {
+    color: $primary-600;
+}
+
+section.cartList {
+
+    .clearBtn {
+        border-color: $primary-600;
+        color: $primary-600;
+        transition: background-color 0.2s ease, color 0.2s ease;
+
+        .material-icons-outlined {
+            color: $primary-600;
+            transition: color 0.2s ease;
+        }
+
+        &:hover,
+        &:active {
+            background-color: $primary-600;
+            color: $white;
+
+            .material-icons-outlined {
+                color: $white;
+            }
+        }
+    }
+    .cartTable {
+        background-color: $white;
+
+        @include media-breakpoint-down(lg) {
+            background-color: transparent;
+        }
+
+        .deleteBtn {
+            display: inline-flex;
+            align-items: center;
+            border-color: $primary-600;
+            color: $primary-600;
+
+            .material-icons {
+                color: $primary-600;
+            }
+
+            &:hover,
+            &:active {
+                background-color: $primary-600;
+                color: $white;
+                
+                .material-icons {
+                    color: $white;
+                }
+            }
+        }
+
+        @include media-breakpoint-down(lg) {
+            tr {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                padding: 8px;
+                border-radius: 12px;
+                margin-bottom: 20px;
+
+                td {
+                    display: flex;
+                    align-items: center;
+                    background-color: $primary-100;
+                    border-color: $white;
+
+                    .deleteBtn {
+                        position: absolute;
+                        right: 12px;
+                        top: 32px;
+                    }
+
+                    &:last-child {
+                        border: 0;
+                        margin: 0 !important;
+                    }
+
+                    &:before {
+                        display: inline-flex;
+                        content: attr(data-label);
+                        font-weight: normal;
+                        color: $neutral-900;
+                        font-size: 14px;
+                        margin-right: 12px;
+                        width: 40px;
+                    }
+
+                    &:first-child:before {
+                        width: 0;
+                        margin: 0 !important;
+                    }
+                }
+            }
+            tr.nodata {
+                border-radius: 0;
+                background: none;
+                border-top: 1px solid var(--gray1);
+                border-bottom: 1px solid var(--gray1);
+
+                & td {
+                    background: none;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                & td:before {
+                    width: 0;
+                }
+            }
+        }
+    }
+} //end of cartList
+
+.qtyBtn {
+    border: 1px solid transparent;
+    color: $white;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+    &:not(:disabled) {
+        border-color: $primary-600;
+        color: $primary-600;
+
+        &:hover,
+        &:active {
+            background-color: $primary-600;
+            color: $white;
+
+            .material-icons {
+                color: $white;
+            }
+        }
+    }
+}
+
+.couponBtn {
+    border: 1px solid transparent;
+    background-color: $neutral-100;
+    color: $white;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+    &:not(:disabled) {
+        background-color: $primary-600;
+        color: $white;
+
+        &:hover,
+        &:active {
+            background-color: $primary-800;
+            color: $white;
+        }
+    }
+}
+
+.submitBtn {
+    border: 1px solid transparent;
+    background-color: $neutral-100;
+    color: $white;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+    &:not(:disabled) {
+        background-color: $primary-600;
+        color: $white;
+
+        &:hover,
+        &:active {
+            background-color: $primary-800;
+            color: $white;
+        }
+    }
+}
+
+.btn-product {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid $primary-600;
+    color: $primary-600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    
+    &:hover,
+    &:active {
+        background-color: $primary-600;
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+section.orderInfo {
+    .creditInfo {
+        background: $primary-200;
+        padding: 16px;
+        border-radius: 16px;
+    }
+} //end of orderInfo
+
+

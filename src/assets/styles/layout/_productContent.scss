@@ -1,0 +1,76 @@
+.category-title {
+    color: $black; 
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+    .category-title {
+        font-size: 24px;
+    }
+}
+
+.category-underline {
+    width: 100%;
+    height: 1px;
+    background: $black; // 或你想要的顏色
+    margin: 0 auto 16px auto; // 下方留點間距
+}
+
+.categoryNavWrapper { // 新增一層包住 underline 和 nav
+    margin-bottom: 40px;
+    @include media-breakpoint-down(md) {
+        max-width: none;
+        margin-bottom: 20px;
+    }
+}
+
+ul.categoryNav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 40px;
+
+    @include media-breakpoint-down(md) {
+        & {
+            max-width: none;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+    }
+
+    .categoryBtn {
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px;
+        color: $primary-600;
+        border-radius: 0;
+        
+        @include media-breakpoint-down(md) {
+            & {
+                gap: 8px;
+                padding: 8px;
+            }
+        }
+
+        &.active,
+        &:hover {
+            background-color: $primary-200;
+            color: $primary-600;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .categoryBtn {
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+    
+}

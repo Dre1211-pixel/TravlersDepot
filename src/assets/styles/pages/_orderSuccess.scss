@@ -1,0 +1,45 @@
+//---pageStyle ---- CreateOrderSuccess.jsx 訂購成功頁面
+section.orderSuccessPage {
+    .orderCard {
+        box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        border: 0;
+        background-color: $white;
+        margin: 8px;
+        .title {
+            position: relative;
+            display: inline-block;
+            width: 90px;
+            font-size: 15px;
+            color: $black;
+            margin-right: 12px;
+            &::after {
+                display: inline-block;
+                content: '/';
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-size: 14px;
+                color: $neutral-600;
+            }
+        }
+        .orderInfo {
+            background-color: $primary-200;
+        }
+
+        .order-title {
+            color: $primary-600;
+        }
+    }
+
+    .allProductBtn {
+        border-color: $primary-600;
+        color: $primary-600;
+        background-color: transparent;
+        
+        &:hover {
+            background-color: $primary-600;
+            color: white;
+        }
+    }
+} // end of orderSuccessPage

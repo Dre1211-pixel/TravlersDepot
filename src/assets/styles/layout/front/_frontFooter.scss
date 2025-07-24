@@ -1,0 +1,16 @@
+footer.frontFooter {
+    padding: 48px 0;
+    background-color: var(--primaryPestel);
+    background-color: $primary-200;
+
+    .navbar-nav a.nav-link:hover {
+        color: $primary-600;
+        font-weight: 600;
+        transform: scale(1.05); // Optional slight zoom effect
+        transition: all 0.2s ease-in-out;
+    }
+
+    & .copyright {
+        color: $neutral-800;
+    }
+}

@@ -1,0 +1,108 @@
+.loginPage {
+    position: relative;
+    
+    .tipBox {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 2;
+        width: calc(100vw - 2rem);
+        display: flex;
+        align-items: center;
+        padding: 12px 16px;
+        background: #e04c10;
+        color: #fff;
+        border-radius: 16px;
+        opacity: 0.9;
+
+        .material-icons-outlined {
+            color: $white;
+        }
+        
+        @include media-breakpoint-down(md) {
+            & {
+                top: calc(80px + 1rem);
+            }
+        }
+    }
+
+    .AdminLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        @include media-breakpoint-down(md) {
+            & {
+                height: auto;
+                padding: 20px;
+            }
+            & img {
+                height: 40px;
+            }
+        }
+    }
+
+    .login {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../../assets/images/banner/banner5.jpeg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        @include media-breakpoint-down(md) {
+            & {
+                height: calc(100vh - 80px);
+            }
+        }
+
+        .loginForm {
+            width: 250px;
+
+            .btn {
+                --bs-btn-disabled-opacity: 0.8 !important;
+            }
+        }
+    }
+
+    .loginBtn {
+        color: $white;
+        padding: 0.5rem 1rem;
+        border: 1px solid $primary-600;
+
+        &:hover {
+            background-color: $primary-600;
+        }
+
+        &:active {
+            background-color: $primary-600;
+            border: none;
+        }
+
+        &:disabled {
+            background-color: $neutral-600;
+            border:none;
+            opacity: 0.8;
+        }
+    }
+
+    .returnBtn {
+        color: $white;
+
+        &:hover {
+            color: $primary-500;
+        }
+    }
+
+    .copyright {
+        position: absolute;
+        bottom: 0px;
+        text-align: center;
+        color: #fff;
+        @media (max-width: 460px) {
+            max-width: 250px;
+        }
+    }
+}

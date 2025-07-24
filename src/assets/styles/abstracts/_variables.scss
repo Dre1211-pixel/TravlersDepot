@@ -1,0 +1,131 @@
+// =========================================
+// Design Tokens for Portfolio Project
+// 模擬實戰專案用 SCSS 變數（Bootstrap-like）
+// =========================================
+
+// --------------------
+// 色彩系統 Colors
+// --------------------
+$white: #FFFFFF;
+$black: #000000;
+
+$highlight-red: #DF503B;
+$highlight-yellow: #FCEE96;
+
+$primary-50:  #F3F8FC;
+$primary-100: #E7F0F7;
+$primary-200: #C9DFEF;
+$primary-300: #B7D6D7;
+$primary-400: #63A7CD;
+$primary-500: #3FC8BB;
+$primary-600: #26719B;
+$primary-700: #010101;
+$primary-800: #234D69;
+$primary-900: #224158;
+
+$neutral-100: #FAFAFA;
+$neutral-200: #F5F5F5;
+$neutral-300: #F0F0F0;
+$neutral-400: #DEDEDE;
+$neutral-500: #C2C2C2;
+$neutral-600: #979797;
+$neutral-700: #818181;
+$neutral-800: #606060;
+$neutral-900: #3C3C3C;
+
+// 色彩對應語意名稱
+$primary: $primary-500;
+$secondary: $neutral-700;
+$info: $primary-400;
+$danger: $highlight-red;
+$warning: $highlight-yellow;
+$light: $neutral-100;
+$dark: $neutral-900;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "info": $info,
+    "danger": $danger,
+    "warning": $warning,
+    "light": $light,
+    "dark": $dark
+);
+
+// --------------------
+// 字體 Font System
+// --------------------
+$font-family-sans-serif: "Noto Sans TC", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$font-family-serif: "Noto Serif TC", serif;
+$font-size-base: 1rem; // = 16px
+$line-height-base: 1.5;
+
+// --------------------
+// 字級 Font Sizes
+// --------------------
+$headings: (
+    h1: 4.25rem, // 68px
+    h2: 3.5rem,
+    h3: 2.5rem,
+    h4: 2rem,
+    h5: 1.75rem,
+    h6: 1.25rem
+);
+
+$font-sizes: (
+    fs-1: 2.5rem,
+    fs-2: 2rem,
+    fs-3: 1.75rem,
+    fs-4: 1.5rem,
+    fs-5: 1.25rem,
+    fs-6: 1rem,
+    fs-7: 0.875rem
+);
+
+// 字體樣式共通設定
+$heading-font-weight: 600;
+$heading-line-height: 1.2;
+$heading-letter-spacing: 0.04em;
+
+$text-letter-spacing: 1px;
+$text-color: $neutral-900;
+
+// --------------------
+// 間距 Spacing
+// --------------------
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.5rem,
+  5: 3rem
+);
+
+// --------------------
+// Border Radius
+// --------------------
+$border-radius: 0.5rem;     // 8px
+$border-radius-sm: 0.25rem; // 4px
+$border-radius-lg: 0.75rem; // 12px
+
+// --------------------
+// Breakpoints
+// --------------------
+$grid-breakpoints: (
+  xs: 0,
+  sm: 36rem,   // 576px
+  md: 48rem,   // 768px
+  lg: 62rem,   // 992px
+  xl: 75rem    // 1200px
+);
+
+// --------------------
+// Z-index
+// --------------------
+$zindex-dropdown: 1000;
+$zindex-sticky: 1020;
+$zindex-modal: 1050;
+$zindex-tooltip: 1080;

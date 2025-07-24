@@ -1,0 +1,127 @@
+.user-type {
+    margin-top: 50px;
+    text-align: center;
+
+    .text-blue {
+        color: $primary-500;
+    }
+
+    button {
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+    }
+    .input-field {
+        font-size: 1.2rem;
+        padding: 10px;
+        border: 2px solid hsla(0, 0%, 80%, 0.5);
+        border-radius: 5px;
+        color: hsla(0, 0%, 0%, 0.5)
+    }
+    .form-checkbox {
+        width: 30px;  // 調整大小
+        height: 30px; // 調整大小
+        margin-right: 10px;
+        accent-color: hsl(125, 47%, 54%);  // 設置勾選時的顏色，使用與您的 add-button 相同的色系
+        cursor: pointer;
+    }
+    .add-button {
+        background-color: hsl(125, 47%, 54%);
+    }
+    .add-button:hover {
+        background-color: hsl(125, 47%, 44%);
+    }
+    .delete-button {
+        background-color: hsl(10, 90%, 50%);
+    }
+    .delete-button:hover {
+        background-color: hsl(10, 90%, 40%);
+    }
+    .move-button {
+        background-color: hsl(207, 90%, 64%);
+    }
+    .move-button:hover {
+        background-color: hsl(207, 90%, 54%);
+    }
+    .shake-animation {
+        animation: shake 0.3s ease-in-out;
+    }
+    
+    .moving {
+        transition: all 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.05);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @keyframes shake {
+        0%, 100% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(-5px);
+        }
+        75% {
+            transform: translateX(5px);
+        }
+    }
+
+    .move-shadow {
+        transition: box-shadow 5s ease;
+        background-color: $primary-800;
+        color: white;
+    }
+
+    @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        25% { transform: translateX(-5px); }
+        75% { transform: translateX(5px); }
+    }
+}
+
+.todo-section {
+    ol {
+        padding: 0;
+    }
+    li {
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 15px;
+        background-color: hsl(0, 0%, 100%);
+        margin-bottom: 10px;
+        border: 3px solid hsl(0, 0%, 85%, 0.75);
+        display: flex;
+        align-items: center;
+    }
+    .text {
+        flex: 1; 
+    }
+    .delete-button, .move-button {
+        padding: 8px 12px;
+        font-size: 1.2rem;
+        margin-left: 10px;
+
+    }
+}
+
+.recommended-products {
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+
+    .product-swiper {
+        padding: 1rem 0;
+
+        // 新增以下樣式
+        .productCard {
+            text-align: left;
+
+            .card-body {
+                text-align: left;
+            }
+        }
+    }
+}

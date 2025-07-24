@@ -1,0 +1,142 @@
+//btn style
+.btn {
+    display: inline-block;
+    border-radius: 100px;
+    padding: 8px 24px;
+    font-size: 1rem;
+}
+.btn-primary {
+    --bs-btn-color: var(--white);
+    --bs-btn-bg: var(--primaryDefault);
+    --bs-btn-border-color: var(--primaryDefault);
+    --bs-btn-hover-color: var(--white);
+    --bs-btn-hover-bg: var(--primaryDark);
+    --bs-btn-hover-border-color: var(--primaryDark);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--white);
+    --bs-btn-active-bg: var(--primaryDark);
+    --bs-btn-active-border-color: var(--primaryDark);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--white);
+    --bs-btn-disabled-bg: var(--gray2);
+    --bs-btn-disabled-border-color: var(--gray2);
+}
+.btn-primary-outline {
+    --bs-btn-color: var(--primaryDefault);
+    --bs-btn-bg: var(--white);
+    --bs-btn-border-color: var(--primaryDefault);
+    --bs-btn-hover-color: var(--white);
+    --bs-btn-hover-bg: var(--primaryDefault);
+    --bs-btn-hover-border-color: var(--primaryDefault);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--white);
+    --bs-btn-active-bg: var(--primaryDark);
+    --bs-btn-active-border-color: var(--primaryDark);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--white);
+    --bs-btn-disabled-bg: var(--gray2);
+    --bs-btn-disabled-border-color: var(--gray2);
+}
+.btn-edit {
+    --bs-btn-color: var(--white);
+    --bs-btn-bg: var(--adminDefault);
+    --bs-btn-border-color: var(--adminDefault);
+    --bs-btn-hover-color: var(--white);
+    --bs-btn-hover-bg: var(--adminDefaultDark);
+    --bs-btn-hover-border-color: var(--adminDefaultDark);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--white);
+    --bs-btn-active-bg: var(--adminDefaultDark);
+    --bs-btn-active-border-color: var(--adminDefaultDark);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--white);
+    --bs-btn-disabled-bg: var(--gray2);
+    --bs-btn-disabled-border-color: var(--gray2);
+}
+.btn-edit-outline {
+    --bs-btn-color: var(--adminDefault);
+    --bs-btn-bg: var(--white);
+    --bs-btn-border-color: var(--adminDefault);
+    --bs-btn-hover-color: var(--white);
+    --bs-btn-hover-bg: var(--adminDefault);
+    --bs-btn-hover-border-color: var(--adminDefault);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--white);
+    --bs-btn-active-bg: var(--adminDefault);
+    --bs-btn-active-border-color: var(--adminDefault);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--white);
+    --bs-btn-disabled-bg: var(--gray2);
+    --bs-btn-disabled-border-color: var(--gray2);
+}
+.btn-success {
+    --bs-btn-color: var(--white);
+    --bs-btn-bg: var(--adminSuccess);
+    --bs-btn-border-color: var(--adminSuccess);
+    --bs-btn-hover-color: var(--white);
+    --bs-btn-hover-bg: var(--adminSuccessDark);
+    --bs-btn-hover-border-color: var(--adminSuccessDark);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--white);
+    --bs-btn-active-bg: var(--adminSuccessDark);
+    --bs-btn-active-border-color: var(--adminSuccessDark);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--white);
+    --bs-btn-disabled-bg: var(--gray2);
+    --bs-btn-disabled-border-color: var(--gray2);
+}
+.btn-success-outline {
+    --bs-btn-color: var(--adminSuccess);
+    --bs-btn-bg: var(--white);
+    --bs-btn-border-color: var(--adminSuccess);
+    --bs-btn-hover-color: var(--white);
+    --bs-btn-hover-bg: var(--adminSuccessDark);
+    --bs-btn-hover-border-color: var(--adminSuccessDark);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--white);
+    --bs-btn-active-bg: var(--adminSuccessDark);
+    --bs-btn-active-border-color: var(--adminSuccessDark);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--white);
+    --bs-btn-disabled-bg: var(--gray2);
+    --bs-btn-disabled-border-color: var(--gray2);
+}
+.btn-delete {
+    --bs-btn-color: var(--white);
+    --bs-btn-bg: var(--adminDelete);
+    --bs-btn-border-color: var(--adminDelete);
+    --bs-btn-hover-color: var(--white);
+    --bs-btn-hover-bg: var(--adminDeleteDark);
+    --bs-btn-hover-border-color: var(--adminDeleteDark);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--white);
+    --bs-btn-active-bg: var(--adminDeleteDark);
+    --bs-btn-active-border-color: var(--adminDeleteDark);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--white);
+    --bs-btn-disabled-bg: var(--gray2);
+    --bs-btn-disabled-border-color: var(--gray2);
+}
+.btn-delete-outline {
+    --bs-btn-color: var(--adminDelete);
+    --bs-btn-bg: var(--white);
+    --bs-btn-border-color: var(--adminDelete);
+    --bs-btn-hover-color: var(--white);
+    --bs-btn-hover-bg: var(--adminDeleteDark);
+    --bs-btn-hover-border-color: var(--adminDeleteDark);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--white);
+    --bs-btn-active-bg: var(--adminDeleteDark);
+    --bs-btn-active-border-color: var(--adminDeleteDark);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--white);
+    --bs-btn-disabled-bg: var(--gray2);
+    --bs-btn-disabled-border-color: var(--gray2);
+}
+
+.link-primary {
+    color: var(--secondaryDark) !important;
+    &:hover {
+        color: var(--primaryDefault);
+    }
+}

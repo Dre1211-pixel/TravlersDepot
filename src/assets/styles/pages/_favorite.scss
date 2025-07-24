@@ -1,0 +1,36 @@
+//---pageStyle ---- Favorite.jsx 收藏清單
+section.favoritePage {
+    background-color: var(--gray0);
+    //swiper  - favoritePage Banner
+    .swiperBanner {
+        position: relative;
+
+        .detail {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $neutral-100;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+    
+    .btn-product {
+        display: inline-block;
+        padding: 8px 16px;
+        border: 1px solid $primary-600;
+        color: $primary-600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border-radius: 4px;
+    
+    &:hover,
+    &:active {
+        background-color: $primary-600;
+        color: $white;
+        text-decoration: none;
+    }
+}
+}

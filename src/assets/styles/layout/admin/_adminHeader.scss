@@ -1,0 +1,55 @@
+.adminHeader {
+    width: 260px;
+    background: var(--white);
+    height: 100vh;
+
+    // 新增 logo 樣式
+    .logo {
+        padding: 1rem;
+        
+        img {
+            max-width: 200px;  // 設定最大寬度
+            width: 100%;      // 響應式寬度
+            height: auto;     // 保持圖片比例
+            display: block;   // 區塊層級顯示
+            margin: 0 auto;   // 水平置中
+        }
+    }
+
+    a.nav-link {
+        display: inline-block;
+        color: $neutral-500;
+        transition: all 0.3s ease;
+        position: relative;
+        padding-left: 1rem;
+        font-weight: 600;
+
+        &:hover,
+        &.active {
+            color: $primary-600;
+            background: $primary-100;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+
+        .material-icons {
+            color: $neutral-500;
+            font-size: 16px;
+        }
+
+        &:hover .material-icons,
+        &.active .material-icons {
+            color: $primary-600;
+            transform: scale(1.1);
+        }
+    }
+
+    .logoutBtn {
+        color: $white;
+        background-color: $primary-600;
+
+        &:hover {
+            background-color: $primary-800;
+        }
+    }
+} //.adminHeader End

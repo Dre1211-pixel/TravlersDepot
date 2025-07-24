@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+        url('https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-tc@5.2.5/files/noto-sans-tc-latin-400-normal.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-tc@5.2.5/files/noto-sans-tc-latin-400-normal.woff') format('woff');
+    font-display: swap; // Improves font loading performance
+}
+
+body {
+    font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+}
